@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>L36 resize & user-select</title>
+        <link href="./tailwindcss.css" rel="stylesheet" type="text/css"/>
+        <style type="text/css">
+            p::before{
+                content: "before";
+            }
+
+            p::after{
+                content: "after";
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is tailwindcss</h1>
+
+        <h1>Resize</h1>
+
+        <label for="bio1">Bio1</label>
+        <textarea name="bio" id="bio1" class="resize-none" role="5"></textarea>
+
+        <hr/>
+
+        <label for="bio2">Bio2</label>
+        <textarea name="bio" id="bio2" class="resize-x" role="5"></textarea>
+
+        <hr/>
+
+        <label for="bio3">Bio3</label>
+        <textarea name="bio" id="bio3" class="resize-y" role="5"></textarea>
+
+        <hr/>
+
+        <label for="bio4">Bio4</label>
+        <textarea name="bio" id="bio4" class="resize" role="5"></textarea>
+
+        <h1>User Select</h1>
+
+        <p class="select-none">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+        <hr/>
+
+        <p class="select-auto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+        <hr/>
+
+        <p class="select-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+        <hr/>
+
+        <p class="select-all">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+        <hr/>
+
+        <h1>Appearance</h1>
+
+        <select name="city" id="city" class="">
+            <option value="yg">Yangon</option>
+            <option value="mdy">Mandalay</option>
+            <option value="bgo">Bago</option>
+        </select>
+
+        <select name="country" id="country" class="appearance-none">
+            <option value="mm">Myanmar</option>
+            <option value="th">Thailand</option>
+            <option value="slk">Srilanka</option>
+        </select>
+    </body>
+</html>
+
+<!--
+resize-none (resize: none;)
+resize-x (resize: horizontal;)
+resize-y (resize: vertical;)
+resize (resize: both;)
+-->
+
+<!--
+select-none (user-select: none;)
+select-auto (user-select: auto;)
+select-text (user-select: text;)
+select-all (user-select: all;)
+-->
+
+<!--
+appearance (appearance: none;)
+-->

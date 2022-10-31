@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>L15 Text Overflow</title>
+        <link href="./tailwindcss.css" rel="stylesheet" type="text/css"/>
+        <style>
+            .box{
+                width: 400px;
+                height: 200px;
+                border: 1px solid blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is tailwindcss</h1>
+
+        <div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+
+        <hr/>
+
+        <div>
+            <p class="truncate">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+
+        <hr/>
+
+        <div class="box">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+
+        <hr/>
+
+        <div class="box">
+            <p class="truncate">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <p class="truncate">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+
+        <hr/>
+    </body>
+</html>

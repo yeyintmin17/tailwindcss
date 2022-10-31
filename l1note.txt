@@ -1,0 +1,95 @@
+https://tailwindcss.com
+
+(1) Integrate Methods
+i. Using CDN Link ( Content Deliver Network )
+ii. Using Tailwind CLI ( Using Width NodeJS ) ( Light Weight )
+iii. Using PostCSS ( Using With NodeJS ) ( Light Weight )
+
+To Download
+Terminal => VS Code
+NodeJS
+
+(2) NodeJS 
+=> To check version
+"node -v" 
+
+// for linux
+
+=> "sudo apt update"
+=> "sudo apt upgrade -y"
+=> "sudo apt install nodejs
+=> "node -v"
+
+// for linux
+
+(3) i. Using CDN Link
+=> Documentation > Play CDN
+=> <script src="https://cdn.tailwindcss.com"></script> (with css compine)
+
+(4) iii. Using PostCSS
+=> open folder usingpostcss
+=> open terminal
+
+=> To install tailwindcss
+"npm install -D tailwindcss postcss autoprefixer"
+
+// for linux
+=> "sudo apt install npm"
+// for linux
+
+=> Create tailwind.config.js file
+"npx tailwindcss init"
+
+=> Add postcss.config.js file
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  }
+}
+
+=> go to tailwind.config.js
+/** @type {import('tailwindcss').Config} */ 
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+=> write down in content:["./public/**/*.html"]
+. = current folder
+.. = leave folder
+** = all folder of inside in public folder
+* = all html files
+
+=> Create Tailwind main.css file
+create new folder tailwind and naming 'tailwind'
+create new file and naming 'main.css' in tailwind folder
+
+scss
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+=> build process 
+"npm init -y" (so it's will create package.json)
+
+=> write down in package.json.js > "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwind -i ./tailwind/main.css -o ./public/tailwindcss.css"
+},
+
+-i = install
+-o = open (file)
+
+=> go to terminal and enter "npm run build"
+
+=> Watch 
+go to package.json, write down
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "build": "tailwindcss -i ./tailwind/main.css -o ./public/tailwindcss.css",
+  "watch": "tailwindcss -i ./tailwind/main.css -o ./public/tailwindcss.css --watch" (-w)
+},

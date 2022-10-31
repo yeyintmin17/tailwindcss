@@ -1,0 +1,4 @@
+/* to call modules's css files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

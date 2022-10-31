@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>L42 position</title>
+        <link href="./tailwindcss.css" rel="stylesheet" type="text/css"/>
+        <style type="text/css">
+            .box{
+                width: 200px;
+                height: 200px;
+                background-color: silver;
+            }
+
+            .div1{
+                width: 100px;
+                height: 100px;
+                background-color: black;
+                color: #fff;
+            }
+
+            .div2{
+                width: 100px;
+                height: 100px;
+                background-color: orange;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is tailwindcss</h1>
+
+        <div class="box">
+            <div class="div1 absolute z-10">DIV 1</div>
+            <div class="div2 absolute z-50">DIV 2</div>
+        </div>
+
+        <br/>
+
+        <div class="box relative">
+            <div class="div1">DIV 1</div>
+            <div class="div2 absolute inset-0">DIV 2</div>
+        </div>
+
+        <br/>
+
+        <div class="box">
+            <div class="div1">DIV 1</div>
+            <div class="div2 absolute inset-x-0">DIV 2</div>
+        </div>
+
+        <br/>
+
+        <div class="box relative">
+            <div class="div1">DIV 1</div>
+            <div class="div2 absolute inset-y-0">DIV 2</div>
+        </div>
+
+        <br/>
+
+        <div class="box relative">
+            <div class="div1">DIV 1</div>
+            <div class="div2 absolute left-0">DIV 2</div>
+        </div>
+
+        <br/>
+
+        <div class="box relative">
+            <div class="div1">DIV 1</div>
+            <div class="div2 absolute top-0">DIV 2</div>
+        </div>
+
+        <br/>
+
+        <div class="box relative">
+            <div class="div1">DIV 1</div>
+            <div class="div2 absolute right-0">DIV 2</div>
+        </div>
+
+        <br/>
+
+        <div class="box relative">
+            <div class="div1">DIV 1</div>
+            <div class="div2 absolute bottom-0">DIV 2</div>
+        </div>
+
+        <br/>
+    </body>
+</html>
+
+<!-- 
+relative (position: relative;)
+absolute (position: absolute;)
+static (position: static;)
+fixed (position: fixed;)
+sticky (position: sticky;)
+-->
+
+<!--
+z-0 (z-index: 0;)
+z-10 (z-index: 10;)
+z-20 (z-index: 20;)
+z-30 (z-index: 30;)
+z-40 (z-index: 40;)
+z-50 (z-index: 50;)
+z-auto (z-index: auto;)
+-->
+
+<!--
+inset-0 (left: 0; top: 0; right: 0; bottom: 0;)
+inset-x-0 (left: 0; right: 0;)
+inset-y-0 (top: 0; bottom: 0;)
+left-0
+right-0
+top-0
+bottom-0
+
+inset-px (left: 1px; top: 1px; right: 1px; bottom: 1px;)
+inset-x-px (left: 1px; right: 1px;)
+inset-y-px (top: 1px; bottom: 1px;)
+left-px
+right-px
+top-px
+bottom-px
+
+0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4,
+5, 6, 7, 8, 9, 10, 11, 12,
+14, 16,
+20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64,
+72, 80,
+96
+-->

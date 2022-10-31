@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>L21 Shadow</title>
+        <link href="./tailwindcss.css" rel="stylesheet" type="text/css"/>
+        <style type="text/css">
+            body{
+                background-color: #f1f1f1;
+            }
+
+            .box{
+                width: 200px;
+                height: 200px;
+                background-color: #f4f4f4;
+                margin: 20px;
+            }
+
+            .d-flex{
+                width: 600px;
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is tailwindcss</h1>
+
+        <div class="d-flex">
+            <div class="box shadow-none"></div>
+            <div class="box drop-shadow-none"></div>
+        </div>
+        
+        <div class="d-flex">
+            <div class="box shadow-sm"></div>
+            <div class="box drop-shadow-sm"></div>
+        </div>
+
+        <div class="d-flex">
+            <div class="box shadow"></div>
+            <div class="box drop-shadow"></div>
+        </div>
+
+        <div class="d-flex">
+            <div class="box shadow-md"></div>
+            <div class="box drop-shadow-md"></div>
+        </div>
+
+        <div class="d-flex">
+            <div class="box shadow-lg"></div>
+            <div class="box drop-shadow-lg"></div>
+        </div>
+
+        <div class="d-flex">
+            <div class="box shadow-xl"></div>
+            <div class="box drop-shadow-xl"></div>
+        </div>
+
+        <div class="d-flex">
+            <div class="box shadow-2xl"></div>
+            <div class="box drop-shadow-2xl"></div>
+        </div>
+
+        <div class="d-flex">
+            <div class="box shadow-inner"></div>
+        </div>
+    </body>
+</html>
+
+<!--
+shadow-none (box-shadow: 0 0 0 #000;)
+shadow-sm
+shadow
+shadow-md
+shadow-lg
+shadow-xl
+shadow-2xl
+
+shadow-inner (box-shadow: inset h v b c;)
+-->
+
+<!--
+drop-shadow-none (filter: drop-shadow(0 0 0 #000) drop-shadow(0 0 0 #000))
+drop-shadow
+drop-shadow
+drop-shadow-md
+drop-shadow-lg
+drop-shadow-xl
+drop-shadow-2xl
+-->

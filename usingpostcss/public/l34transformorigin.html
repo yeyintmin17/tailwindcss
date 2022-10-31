@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>L34 transform-origin</title>
+        <link href="./tailwindcss.css" rel="stylesheet" type="text/css"/>
+        <style type="text/css">
+            .box{
+                width: 100px;
+                height: 100px;
+                border: 1px solid red;
+                margin: 20px;
+            }
+
+            .box img{
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is tailwindcss</h1>
+
+        <div class="box">
+            <img src="./img/cat.jpg" class="rotate-45 origin-center" alt="cat"/>
+        </div>
+
+        <hr/>
+
+        <div class="box">
+            <img src="./img/cat.jpg" class="rotate-45 origin-left" alt="cat"/>
+        </div>
+
+        <hr/>
+
+        <div class="box">
+            <img src="./img/cat.jpg" class="rotate-45 origin-right" alt="cat"/>
+        </div>
+
+        <hr/>
+
+        <div class="box">
+            <img src="./img/cat.jpg" class="rotate-45 origin-top" alt="cat"/>
+        </div>
+
+        <hr/>
+
+        <div class="box">
+            <img src="./img/cat.jpg" class="rotate-45 origin-bottom" alt="cat"/>
+        </div>
+
+        <hr/>
+
+        <div class="box">
+            <img src="./img/cat.jpg" class="rotate-45 origin-top-left" alt="cat"/>
+        </div>
+
+        <hr/>
+
+        <div class="box">
+            <img src="./img/cat.jpg" class="rotate-45 origin-top-right" alt="cat"/>
+        </div>
+
+        <hr/>
+
+        <div class="box">
+            <img src="./img/cat.jpg" class="rotate-45 origin-bottom-left" alt="cat"/>
+        </div>
+
+        <hr/>
+
+        <div class="box">
+            <img src="./img/cat.jpg" class="rotate-45 origin-bottom-right" alt="cat"/>
+        </div>
+
+        <hr/>
+</html>
+
+<!--
+origin-center (transform-origin: center;)
+origin-left (transform-origin: left;)
+origin-right (transform-origin: right;)
+origin-top (transform-origin: top;)
+origin-bottom (transform-origin: bottom;)
+
+origin-top-left (transform-origin: left top;)
+origin-top-right (transform-origin: right top;)
+
+origin-bottom-left (transform-origin: left bottom;)
+origin-bottom-right (transform-origin: right bottom;)
+-->
