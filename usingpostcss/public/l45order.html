@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>L45 order</title>
+        <link href="./tailwindcss.css" rel="stylesheet" type="text/css"/>
+        <style type="text/css">
+            .box{
+                width: 200px;
+                background-color: silver;
+            }
+
+            .div1{
+                width: 100px;
+                height: 100px;
+                background-color: black;
+                color: #fff;
+            }
+
+            .div2{
+                width: 100px;
+                height: 100px;
+                background-color: orange;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is tailwindcss</h1>
+
+        <div class="box flex">
+            <div class="div1 order-1">1</div>
+            <div class="div2 order-8">8</div>
+            <div class="div1 order-2">2</div>
+            <div class="div2 order-9">9</div>
+            <div class="div1 order-3">3</div>
+            <div class="div2 order-10">10</div>
+            <div class="div1 order-4">4</div>
+            <div class="div2 order-11">11</div>
+            <div class="div1 order-5">5</div>
+            <div class="div2 order-12">12</div>
+            <div class="div1 order-6">6</div>
+            <div class="div2 order-first">13</div>
+            <div class="div1 order-7">7</div>
+            <div class="div2 order-last">14</div>
+        </div>
+
+        <br/>
+
+        <div class="box grid">
+            <div class="div1 order-1">1</div>
+            <div class="div2 order-8">8</div>
+            <div class="div1 order-2">2</div>
+            <div class="div2 order-9">9</div>
+            <div class="div1 order-3">3</div>
+            <div class="div2 order-10">10</div>
+            <div class="div1 order-4">4</div>
+            <div class="div2 order-11">11</div>
+            <div class="div1 order-5">5</div>
+            <div class="div2 order-12">12</div>
+            <div class="div1 order-6">6</div>
+            <div class="div2 order-first">13</div>
+            <div class="div1 order-7">7</div>
+            <div class="div2 order-last">14</div>
+        </div>
+    </body>
+</html>
+
+<!-- 
+order-1 (order: 1;)
+order-2 (order: 2;)
+order-3 (order: 3;)
+
+4, 5, 6, 7, 8, 9, 10, 11
+
+order-12 (order: 12)
+
+order-first (order: -9999;)
+order-last (order: 9999;)
+order-none (order: 0)
+-->
