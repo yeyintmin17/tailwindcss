@@ -678,60 +678,60 @@ video {
   order: 1;
 }
 
-.order-2 {
-  order: 2;
-}
-
-.order-3 {
-  order: 3;
-}
-
-.order-12 {
-  order: 12;
-}
-
-.order-none {
-  order: 0;
-}
-
-.order-first {
-  order: -9999;
-}
-
-.order-last {
-  order: 9999;
-}
-
-.order-4 {
-  order: 4;
-}
-
-.order-5 {
-  order: 5;
-}
-
-.order-6 {
-  order: 6;
-}
-
-.order-7 {
-  order: 7;
-}
-
 .order-8 {
   order: 8;
+}
+
+.order-2 {
+  order: 2;
 }
 
 .order-9 {
   order: 9;
 }
 
+.order-3 {
+  order: 3;
+}
+
 .order-10 {
   order: 10;
 }
 
+.order-4 {
+  order: 4;
+}
+
 .order-11 {
   order: 11;
+}
+
+.order-5 {
+  order: 5;
+}
+
+.order-12 {
+  order: 12;
+}
+
+.order-6 {
+  order: 6;
+}
+
+.order-first {
+  order: -9999;
+}
+
+.order-7 {
+  order: 7;
+}
+
+.order-last {
+  order: 9999;
+}
+
+.order-none {
+  order: 0;
 }
 
 .float-right {
@@ -792,6 +792,86 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-0 {
+  height: 0px;
+}
+
+.h-px {
+  height: 1px;
+}
+
+.h-0\.5 {
+  height: 0.125rem;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.w-0 {
+  width: 0px;
+}
+
+.w-px {
+  width: 1px;
+}
+
+.w-0\.5 {
+  width: 0.125rem;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-40 {
+  width: 10rem;
 }
 
 .table-auto {
@@ -2285,6 +2365,36 @@ video {
 .bg-sky-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(125 211 252 / var(--tw-bg-opacity));
+}
+
+.bg-rose-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 205 211 / var(--tw-bg-opacity));
+}
+
+.bg-stone-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 229 228 / var(--tw-bg-opacity));
+}
+
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 240 138 / var(--tw-bg-opacity));
+}
+
+.bg-cyan-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(165 243 252 / var(--tw-bg-opacity));
+}
+
+.bg-red-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
 }
 
 .text-left {
