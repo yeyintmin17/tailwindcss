@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>L47 place-items</title>
+        <link href="./tailwindcss.css" rel="stylesheet" type="text/css"/>
+        <style type="text/css">
+            
+        </style>
+    </head>
+    <body>
+        <h1>This is tailwindcss</h1>
+
+        <h3>Grid</h3>
+
+        <div class="w-96 h-32 bg-stone-200 grid place-items-start">
+            <div class="w-20 h-20 bg-green-900">Start</div>
+        </div>
+
+        <br/>
+
+        <div class="w-96 h-32 bg-stone-200 grid place-items-end">
+            <div class="w-20 h-20 bg-green-900">End</div>
+        </div>
+
+        <br/>
+
+        <div class="w-96 h-32 bg-stone-200 grid place-items-center">
+            <div class="w-20 h-20 bg-green-900">Center</div>
+        </div>
+
+        <br/>
+
+        <div class="w-96 h-32 bg-stone-200 grid place-items-stretch">
+            <div class="bg-green-900">Stretch</div>
+        </div>
+
+        <br/>
+        
+        <div class="w-96 h-32 bg-stone-200 grid place-items-baseline">
+            <div class="bg-green-900">Baseline</div>
+        </div>
+
+        <br/><hr/><br/>
+
+        <h3>Flex</h3>
+
+        <div class="w-96 h-96 bg-stone-200 flex items-stretch">
+            <div class="w-20 bg-lime-900">Stretch</div>
+            <div class="w-32 bg-emerald-900" style="line-height: 50px;">Stretch</div>
+            <div class="w-40 bg-fuchsia-900" style="line-height: 150px;">Stretch</div>
+        </div>
+
+        <br/>
+
+        <div class="w-96 h-96 bg-stone-200 flex items-baseline">
+            <div class="w-20 h-20 bg-lime-900">Baseline</div>
+            <div class="w-32 h-32 bg-emerald-900" style="line-height: 50px;">Baseline</div>
+            <div class="w-40 h-40 bg-fuchsia-900" style="line-height: 150px;">Baseline</div>
+        </div>
+
+        <br/>
+    </body>
+</html>
+
+<!--
+place-items-start (place-items: start;)
+place-items-end (place-items: end;)
+place-items-center (place-items: center;)
+place-items-stretch (place-items: stretch;)
+place-items-baseline (place-items: baseline;)
+-->
