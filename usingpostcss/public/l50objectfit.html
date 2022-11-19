@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>L50 Object Fit</title>
+        <link href="./tailwindcss.css" rel="stylesheet" type="text/css"/>
+        <style type="text/css">
+            
+        </style>
+    </head>
+    <body>
+        <h1>This is tailwindcss</h1>
+        
+        <div class="bg-indigo-500 my-5">
+            <img src="./img/numbers.png" alt="numbers" class="w-96 h-52 mx-auto"/> null
+        </div>
+
+        <div class="bg-indigo-500 mb-5">
+            <img src="./img/numbers.png" alt="numbers" class="w-96 h-52 mx-auto object-none"/> object-none
+        </div>
+
+        <div class="bg-indigo-500 mb-5">
+            <img src="./img/numbers.png" alt="numbers" class="w-96 h-52 mx-auto object-contain"/> object-contain
+        </div>
+
+        <div class="bg-indigo-500 mb-5">
+            <img src="./img/numbers.png" alt="numbers" class="w-96 h-52 mx-auto object-cover"/> object-cover
+        </div>
+
+        <div class="bg-indigo-500 mb-5">
+            <img src="./img/numbers.png" alt="numbers" class="w-96 h-52 mx-auto object-fill"/> object-fill
+        </div>
+
+        <div class="bg-indigo-500 mb-5">
+            <img src="./img/numbers.png" alt="numbers" class="w-96 h-52 mx-auto object-scale-down"/> object-scale-down
+        </div>
+
+        <br/><hr/><br/>
+
+        <div class="w-64 h-64 bg-emerald-800 border-8 border-red-800 mx-auto my-4">
+            <img src="./img/numbers.png" alt="numbers" class="w-full h-full hover:object-fill transition"/>
+        </div>
+
+        <div class="w-64 h-64 bg-emerald-800 border-8 border-red-800 mx-auto my-4">
+            <img src="./img/numbers.png" alt="numbers" class="w-full h-full hover:object-none object-left transition"/>
+        </div>
+
+        <div class="w-64 h-64 bg-emerald-800 border-8 border-red-800 mx-auto my-4">
+            <img src="./img/numbers.png" alt="numbers" class="w-full h-full hover:object-cover object-right-bottom transition"/>
+        </div>
+
+        <div class="w-64 h-64 bg-emerald-800 border-8 border-red-800 mx-auto my-4">
+            <img src="./img/numbers.png" alt="numbers" class="w-full h-full object-contain object-left-top transition"/>
+        </div>
+
+        <div class="w-64 h-64 bg-emerald-800 border-8 border-red-800 mx-auto my-4">
+            <img src="./img/numbers.png" alt="numbers" class="w-full h-full object-scale-down object-right-top transition"/>
+        </div>
+    </body>
+</html>
+
+<!--
+object-none (object-fit: none;)
+object-contain (object-fit: contain;)
+object-cover (object-fit: cover;)
+object-fill (object-fit: fill;)
+object-scale-down (object-fit: scale-down;)
+-->

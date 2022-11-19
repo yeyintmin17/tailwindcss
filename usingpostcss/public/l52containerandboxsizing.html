@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>L52 Container & Box Sizing</title>
+        <link href="./tailwindcss.css" rel="stylesheet" type="text/css"/>
+        <style type="text/css">
+
+        </style>
+    </head>
+    <body>
+        <h1>This is tailwindcss</h1>
+        
+        <div>This is awesome tailwindcss</div>
+        <div class="container bg-teal-900 mx-auto mb-4">This is container</div>
+        <div class="container bg-teal-900 sm:mx-auto mb-4">This is container in sm</div>
+        <div class="container bg-teal-900 md:mx-auto mb-4">This is container in md</div>
+        <div class="container bg-teal-900 lg:mx-auto mb-4">This is container in lg</div>
+        <div class="container bg-teal-900 xl:mx-auto mb-4">This is container in xl</div>
+        <div class="container bg-teal-900 2xl:mx-auto mb-4">This is container in 2xl</div>
+
+        <hr/>
+
+        <div class="w-36 h-36 bg-blue-500">Normal</div>
+        <br/>
+
+        <div class="w-36 h-36 bg-blue-500 p-8 border-8 border-red-500 box-border">border-box</div>
+        <br/>
+
+        <div class="w-36 h-36 bg-blue-500 p-8 border-8 border-red-500 box-content">content-box</div>
+        <br/>
+    </body>
+</html>
+
+<!--
+container 
+    (width: 100%;)
+sm (width: 640px;)
+md (width: 768px;)
+lg (width: 1024px;)
+xl (width: 1280px;)
+2xl (width: 1536px;)
+-->
+
+<!--
+box-border (box-sizing: border-box;)
+box-content (box-sizing: content-box;)
+-->
