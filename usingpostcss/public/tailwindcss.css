@@ -2860,11 +2860,6 @@ video {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
-.bg-green-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
-}
-
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -3721,6 +3716,30 @@ video {
 
 .underline-offset-auto {
   text-underline-offset: auto;
+}
+
+.accent-white {
+  accent-color: #fff;
+}
+
+.accent-black {
+  accent-color: #000;
+}
+
+.accent-slate-700 {
+  accent-color: #334155;
+}
+
+.accent-green-700 {
+  accent-color: #15803d;
+}
+
+.accent-yellow-700 {
+  accent-color: #a16207;
+}
+
+.accent-slate-100 {
+  accent-color: #f1f5f9;
 }
 
 .opacity-0 {
