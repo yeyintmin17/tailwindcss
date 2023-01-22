@@ -34,6 +34,9 @@
     <body>
         <h1>This is tailwindcss</h1>
 
+        <br/>
+
+        <h1>Flex</h1> <br/>
         <div class="box flex">
             <div class="div1">1</div>
             <div class="div2">2</div>
@@ -41,6 +44,17 @@
 
         <br/>
 
+        <h1>Grid</h1> <br/>
+        <div class="box grid">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+        </div>
+
+        <br/><hr/><br/>
+
+        <h1>justify-content (P) > (flex) (grid)</h1> <br/>
+
+        <span>with flex</span>
         <div class="box flex justify-start">
             <div class="div1">1</div>
         </div>
@@ -66,13 +80,6 @@
 
         <br/>
 
-        <div class="bigbox flex justify-around">
-            <div class="div1">1</div>
-            <div class="div2">1</div>
-        </div>
-
-        <br/>
-
         <div class="bigbox flex justify-evenly">
             <div class="div1">1</div>
             <div class="div2">1</div>
@@ -80,13 +87,145 @@
 
         <br/>
 
-        <div class="bigbox flex justify-between">
+        <div class="bigbox flex justify-around">
             <div class="div1">1</div>
             <div class="div2">1</div>
         </div>
 
         <br/>
 
+        <span>with grid</span>
+        <div class="bigbox grid justify-center">
+            <div class="div1">1</div>
+            <div class="div2">1</div>
+        </div>
+
+        <br/><hr/><br/>
+
+        <h1>align-content (P) > (flex) (grid)</h1> <br/>
+
+        <span>with grid</span>
+        <div class="bigbox grid grid-cols-3 content-start" style="height: 300px;">
+            <div class="div1">01</div>
+            <div class="div1">02</div>
+            <div class="div1">03</div>
+            <div class="div2">04</div>
+            <div class="div2">05</div>
+            <div class="div2">06</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox grid grid-cols-3 content-center" style="height: 300px;">
+            <div class="div1">01</div>
+            <div class="div1">02</div>
+            <div class="div1">03</div>
+            <div class="div2">04</div>
+            <div class="div2">05</div>
+            <div class="div2">06</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox grid grid-cols-3 content-end" style="height: 300px;">
+            <div class="div1">01</div>
+            <div class="div1">02</div>
+            <div class="div1">03</div>
+            <div class="div2">04</div>
+            <div class="div2">05</div>
+            <div class="div2">06</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox grid grid-cols-3 content-between" style="height: 300px;">
+            <div class="div1">01</div>
+            <div class="div1">02</div>
+            <div class="div1">03</div>
+            <div class="div2">04</div>
+            <div class="div2">05</div>
+            <div class="div2">06</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox grid grid-cols-3 content-evenly" style="height: 300px;">
+            <div class="div1">01</div>
+            <div class="div1">02</div>
+            <div class="div1">03</div>
+            <div class="div2">04</div>
+            <div class="div2">05</div>
+            <div class="div2">06</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox grid grid-cols-3 content-around" style="height: 300px;">
+            <div class="div1">01</div>
+            <div class="div1">02</div>
+            <div class="div1">03</div>
+            <div class="div2">04</div>
+            <div class="div2">05</div>
+            <div class="div2">06</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox grid grid-cols-2 content-baseline" style="height: 300px;">
+            <div class="div1">01</div>
+            <div class="div1 p-5">02</div>
+        </div>
+
+        <br/>
+
+        <span>with flex</span>
+        <div class="bigbox flex flex-wrap content-baseline">
+            <div class="div1">1</div>
+            <div class="div1 p-5">2</div>
+        </div>
+
+        <br/><hr/><br/>
+
+        <h1>justify-items (P) > (grid)</h1> <br/>
+
+        <span>with grid</span>
+        <div class="bigbox grid justify-items-start">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox grid justify-items-center">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox grid justify-items-end">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox grid justify-items-stretch">
+            <div class="div1" style="width: initial;">1</div>
+            <div class="div2">2</div>
+        </div>
+
+        <br/>
+
+        <span>width flex</span>
+        <div class="bigbox flex justify-items-center">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+        </div>
+
+        <br/><hr/><br/>
+
+        <h1>align-items (P) > (flex) (grid)</h1>
         <div class="bigbox flex items-start">
             <div class="div1">1</div>
         </div>
@@ -105,38 +244,182 @@
 
         <br/>
 
-        <div class="bigbox flex justify-center items-center">
-            <div class="div1">1</div>
+        <div class="bigbox flex items-stretch">
+            <div class="div1" style="height: initial">1</div>
         </div>
 
         <br/>
 
-        <h1 class="bg-green-500 inline">Save Myanmar</h1>
-        <h1 class="bg-green-500 inline">Pray Myanmar</h1>
+        <div class="bigbox flex items-baseline">
+            <div class="div1">1</div>
+            <div class="div2 p-5">2</div>
+        </div>
 
         <br/>
 
+        <div class="bigbox flex items-baseline" style="align-items: start baseline;">
+            <div class="div1">1</div>
+            <div class="div2 p-5">2</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox flex items-baseline" style="align-items: last baseline;">
+            <div class="div1">1</div>
+            <div class="div2 p-5">2</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox grid grid-cols-3 items-baseline" style="align-items: baseline">
+            <div class="div1 p-10">1</div>
+            <div class="div2 p-5">2</div>
+            <div class="div1 p-2">3</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox grid grid-cols-3 items-baseline" style="align-items: start baseline">
+            <div class="div1 p-10">1</div>
+            <div class="div2 p-5">2</div>
+            <div class="div1 p-2">3</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox grid grid-cols-3 items-baseline" style="align-items: last baseline">
+            <div class="div1 p-10">1</div>
+            <div class="div2 p-5">2</div>
+            <div class="div1 p-2">3</div>
+        </div>
+
+        <br/><hr/><br/>
+
+        <h1>justify-self (C) > (grid)</h1> <br/>
+
+        <span>with grid</span>
+        <div class="bigbox grid">
+            <div class="div1 justify-self-auto">1</div>
+            <div class="div2">2</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox grid">
+            <div class="div1 justify-self-start">1</div>
+            <div class="div2">2</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox grid">
+            <div class="div1 justify-self-center">1</div>
+            <div class="div2">2</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox grid">
+            <div class="div1 justify-self-end">1</div>
+            <div class="div2">2</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox grid">
+            <div class="div1 justify-self-stretch" style="width: initial;">1</div>
+            <div class="div2">2</div>
+        </div>
+
+        <br/>
+
+        <span>with flex</span>
+        <div class="box flex">
+            <div class="div1 justify-self-center">1</div>
+        </div>
+
+        <br/><hr/><br/>
+
+        <h1>align-self (C) > (flex) (grid)</h1> <br/>
+
+        <span>with flex</span>
+        <div class="bigbox flex">
+            <div class="div1">1</div>
+            <div class="div1 self-auto">2</div>
+            <div class="div1">3</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox flex">
+            <div class="div1">1</div>
+            <div class="div1 self-start">2</div>
+            <div class="div1">3</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox flex">
+            <div class="div1">1</div>
+            <div class="div1 self-center">2</div>
+            <div class="div1">3</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox flex">
+            <div class="div1">1</div>
+            <div class="div1 self-end">2</div>
+            <div class="div1">3</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox flex">
+            <div class="div1">1</div>
+            <div class="div1 self-stretch" style="height: initial">2</div>
+            <div class="div1">3</div>
+        </div>
+
+        <br/>
+
+        <div class="bigbox flex">
+            <div class="div1 p-5">1</div>
+            <div class="div1 p-2 self-baseline">2</div>
+            <div class="div1 p-10">3</div>
+        </div>
+
+        <br/>
+
+        <span>with grid</span>
+        <div class="bigbox grid grid-cols-2">
+            <div class="div1">1</div>
+            <div class="div2 self-center">2</div>
+        </div>
+
+        <br/><hr/><br/>
+
+        <span>block</span> <br/>
         <span class="bg-rose-300 block">Save Srilanka</span>
         <span class="bg-rose-300 block">Pray Srilanka</span>
 
         <br/>
 
+        <span>inline</span> <br/>
+        <h1 class="bg-green-500 inline">Save Myanmar</h1>
+        <h1 class="bg-green-500 inline">Pray Myanmar</h1>
+
+        <br/>
+
+        <span>inline-block</span> <br/>
         <span class="bg-sky-300 inline-block">Hello Thailand</span>
         <span class="bg-sky-300 inline-block">Bye Thailand</span>
 
         <br/>
 
+        <span>hidden (none)</span> <br/>
         <span class="bg-sky-300 hidden">Hello Indonesia</span>
         <span class="bg-sky-300">Bye Indonesia</span>
-
-        <div class="w-96 h-96 bg-violet-300 flex flex-col">
-            <span class="h-10 bg-rose-400 mx-auto self-end">01</span>
-            <div class="w-10 h-10 bg-rose-400">02</div>
-            <div class="w-10 h-10 bg-rose-400">03</div>
-            <div class="w-10 h-10 bg-rose-400">04</div>
-            <div class="w-10 h-10 bg-rose-400">05</div>
-            <div class="w-10 h-10 bg-rose-400">06</div>
-          </div>
     </body>
 </html>
 
@@ -186,8 +469,8 @@ content-baseline (align-content: baseline;)
 items-start (align-items: flex-start;)
 items-center (align-items: center;)
 items-end (align-items: flex-end;)
-items-baseline (align-content: baseline;)
 items-stretch (align-items: stretch;)
+items-baseline (align-content: baseline;)
 -->
 
 <!--
