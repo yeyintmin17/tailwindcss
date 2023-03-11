@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>L72 Sidebar Menu</title>
+
+        <link href="./tailwindcss.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style type="text/css">
+
+        </style>
+    </head>
+    <body class="bg-stone-900">
+        <aside class="flex">
+            <div class="w-16 h-screen bg-white flex flex-col items-center py-8 space-y-8 ">
+                <a href="javascript:void(0);" class="text-gray-500 p-2 rounded-lg transition-colors duration-200 hover:bg-gray-100 hover:text-gray-600">
+                    <i class="fas fa-home"></i>
+                </a>
+                
+                <a href="javascript:void(0);" class="bg-blue-100 text-blue-600 p-2 rounded-lg transition-colors duration-200 hover:bg-blue-600 hover:text-blue-100">
+                    <i class="fas fa-users"></i>
+                </a>
+
+                <a href="javascript:void(0);" class="text-gray-500 p-2 rounded-lg transition-colors duration-200 hover:bg-gray-100 hover:text-gray-600">
+                    <i class="fas fa-chart-bar"></i>
+                </a>
+
+                <a href="javascript:void(0);" class="text-gray-500 p-2 rounded-lg transition-colors duration-200 hover:bg-gray-100 hover:text-gray-600">
+                    <i class="fas fa-chart-pie"></i>
+                </a>
+
+                <a href="javascript:void(0);" class="text-gray-500 p-2 rounded-lg transition-colors duration-200 hover:bg-gray-100 hover:text-gray-600">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+                <a href="javascript:void(0);" class="text-gray-500 p-2 rounded-lg transition-colors duration-200 hover:bg-gray-100 hover:text-gray-600">
+                    <i class="fas fa-cogs"></i>
+                </a>
+            </div>
+
+            <div class="w-64 h-screen bg-white px-2 py-8 border-l overflow-y-auto">
+                <h2 class="text-gray-700 text-lg font-medium inline-block px-5">Employees</h2>
+                <p class="text-gray-700 text-sm font-medium inline-block px-5">10/25</p>
+
+                <input type="text" name="search" id="search" class="w-full block px-4 py-2 border border-gray-300 focus:outline-none" placeholder="Search..."/>
+
+                <div class="mt-8 space-y-5">
+                    <button class="w-full flex items-center px-5 py-2 border-b gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+                        <img src="./img/users/user2.jpg" class="w-10 h-10 rounded-full object-cover" alt="user2"/>
+                        
+                        <div class="text-left">
+                            <h1 class="text-gray-700 text-sm font-medium capitalize">ko sai</h1>
+                            <p class="text-gray-500 text-xs">BOD</p>
+                            <p class="text-gray-500 text-xs">2020 ~ up to now</p>
+                        </div>
+                    </button>
+
+                    <button class="w-full flex items-center px-5 py-2 border-b gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+                        <img src="./img/users/feedback-2.jpg" class="w-10 h-10 rounded-full object-cover" alt="feedback-2"/>
+                        
+                        <div class="text-left">
+                            <h1 class="text-gray-700 text-sm font-medium capitalize">mr.anton</h1>
+                            <p class="text-gray-500 text-xs">BOD</p>
+                            <p class="text-gray-500 text-xs">2020 ~ up to now</p>
+                        </div>
+                    </button>
+
+                    <button class="w-full flex items-center px-5 py-2 border-b gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+                        <img src="./img/users/user1.jpg" class="w-10 h-10 rounded-full object-cover" alt="user1"/>
+                        
+                        <div class="text-left">
+                            <h1 class="text-gray-700 text-sm font-medium capitalize">ms.july</h1>
+                            <p class="text-gray-500 text-xs">Operation Director</p>
+                            <p class="text-gray-500 text-xs">2020 ~ up to now</p>
+                        </div>
+                    </button>
+
+                    <button class="w-full flex items-center px-5 py-2 border-b gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+                        <img src="./img/users/agent-1.jpg" class="w-10 h-10 rounded-full object-cover" alt="agent-1"/>
+                        
+                        <div class="text-left">
+                            <h1 class="text-gray-700 text-sm font-medium capitalize">mr.tin</h1>
+                            <p class="text-gray-500 text-xs">IT Director</p>
+                            <p class="text-gray-500 text-xs">2020 ~ up to now</p>
+                        </div>
+                    </button>
+
+                    <button class="w-full flex items-center px-5 py-2 border-b gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+                        <img src="./img/users/2(2).jpg" class="w-10 h-10 rounded-full object-cover" alt="2(2)"/>
+                        
+                        <div class="text-left">
+                            <h1 class="text-gray-700 text-sm font-medium capitalize">aung pyay thain</h1>
+                            <p class="text-gray-500 text-xs">HR Manager</p>
+                            <p class="text-gray-500 text-xs">2020 ~ up to now</p>
+                        </div>
+                    </button>
+
+                    <button class="w-full flex items-center px-5 py-2 border-b gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+                        <img src="./img/users/agen-s-3-3.jpg" class="w-10 h-10 rounded-full object-cover" alt="agen-s-3-3"/>
+                        
+                        <div class="text-left">
+                            <h1 class="text-gray-700 text-sm font-medium capitalize">htet aung kyaw</h1>
+                            <p class="text-gray-500 text-xs">Operation Manager</p>
+                            <p class="text-gray-500 text-xs">2020 ~ up to now</p>
+                        </div>
+                    </button>
+                  
+                    <button class="w-full flex items-center px-5 py-2 border-b gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+                        <img src="./img/users/agen-s-3-1.jpg" class="w-10 h-10 rounded-full object-cover" alt="agen-s-3-1"/>
+                        
+                        <div class="text-left">
+                            <h1 class="text-gray-700 text-sm font-medium capitalize">m zaw naw</h1>
+                            <p class="text-gray-500 text-xs">Finance Manager</p>
+                            <p class="text-gray-500 text-xs">2020 ~ up to now</p>
+                        </div>
+                    </button>
+
+                    <button class="w-full flex items-center px-5 py-2 border-b gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+                        <img src="./img/users/feedback-5.jpg" class="w-10 h-10 rounded-full object-cover" alt="feedback-5"/>
+                        
+                        <div class="text-left">
+                            <h1 class="text-gray-700 text-sm font-medium capitalize">ko jue</h1>
+                            <p class="text-gray-500 text-xs">Sale Representatitve</p>
+                            <p class="text-gray-500 text-xs">2020 ~ up to now</p>
+                        </div>
+                    </button>
+
+                    <button class="w-full flex items-center px-5 py-2 border-b gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+                        <img src="./img/users/user3.jpg" class="w-10 h-10 rounded-full object-cover" alt="user3"/>
+                        
+                        <div class="text-left">
+                            <h1 class="text-gray-700 text-sm font-medium capitalize">ei mon</h1>
+                            <p class="text-gray-500 text-xs">Sale Representatitve</p>
+                            <p class="text-gray-500 text-xs">2020 ~ up to now</p>
+                        </div>
+                    </button>
+
+                    <button class="w-full flex items-center px-5 py-2 border-b gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+                        <img src="./img/users/client3.jpg" class="w-10 h-10 rounded-full object-cover" alt="client3"/>
+                        
+                        <div class="text-left">
+                            <h1 class="text-gray-700 text-sm font-medium capitalize">pann yaung</h1>
+                            <p class="text-gray-500 text-xs">Accountant</p>
+                            <p class="text-gray-500 text-xs">2020 ~ up to now</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <script type="text/javascript">
+            
+        </script>
+    </body>
+</html>

@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>L71 Navbar</title>
-        <link href="./tailwindcss.css" rel="stylesheet" type="text/css"/>
 
+        <link href="./tailwindcss.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <style type="text/css">
@@ -52,15 +52,21 @@
         <script type="text/javascript">
             function togglemenu(ele){
                 // console.log(ele)
-
                 const getul = document.querySelector("ul");
-                if(ele.classList.contains("togglemenu")){
-                    ele.classList.remove("togglemenu");
-                    getul.classList.add("opacity-100");
-                }else{
-                    ele.classList.add("togglemenu");
-                    getul.classList.remove("opacity-100");
-                }
+
+                // Method 1
+                // if(ele.classList.contains("togglemenu")){
+                //     ele.classList.remove("togglemenu");
+                //     getul.classList.add("opacity-100");
+                // }else{
+                //     ele.classList.add("togglemenu");
+                //     getul.classList.remove("opacity-100");
+                // }
+
+                // Method 2
+                ele.classList.contains("togglemenu")
+                    ? (ele.classList.remove("togglemenu"), getul.classList.add("opacity-100"))
+                    : (ele.classList.add("togglemenu"), getul.classList.remove("opacity-100"));
             }
         </script>
     </body>
